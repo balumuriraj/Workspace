@@ -3,8 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <h1>Welcome!</h1>
+  <div class="container">
+    <header>
+      <p>coolstuff.dev</p>
+    </header>
+
+    <div id="workspaceContainer"></div>
+  </div>
+
+  <script>
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'projects-config.json', true);
+    xobj.onreadystatechange = function () {
+      if (xobj.readyState == 4 && xobj.status == "200") {
+        displayProjects(JSON.parse(xobj.responseText));
+      }
+    };
+    xobj.send(null);
+
+    function displayProjects(groups) {
+      groups.forEach(function (group) {
+        var dom = getDOMStructure();
+
+        dom.title.innerHTML = group.title;
+
+        group.list.forEach(function (item) {
+
+          var li = document.createElement("li");
+
+          var anchor = document.createElement("a");
+          anchor.href = item.url;
+          anchor.innerHTML = item.title;
+
+          li.appendChild(anchor);
+          dom.ul.appendChild(li);
+        })
+      });
+    };
+
+    function getDOMStructure() {
+      var root = document.createElement("div");
+      root.className = "projects";
+
+      var title = document.createElement("p");
+      title.className = "title";
+
+      var ul = document.createElement("ul");
+
+      root.appendChild(title);
+      root.appendChild(ul);
+
+      var workspace = document.getElementById("workspaceContainer");
+      workspace.appendChild(root);
+
+      return {
+        root: root,
+        title: title,
+        ul: ul
+      }
+    };
+  </script>
+
 </body>
 </html>

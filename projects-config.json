@@ -1,0 +1,20 @@
+[
+  {
+    "title": "4.x Projects",
+    "list": [
+      {
+        "title": "arcgis-js-api-4",
+        "url": "http://coolstuff.dev/arcgis/4.x/arcgis-js-api-4/"
+      }
+    ]
+  },
+  {
+    "title": "3.x Projects",
+    "list": [
+      {
+        "title": "arcgis-js-api",
+        "url": "http://coolstuff.dev/arcgis/3.x/arcgis-js-api/"
+      }
+    ]
+  }
+]

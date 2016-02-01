@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "my workspace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balumuriraj/Workspace.git"
+  },
+  "author": "MohanRaj Balumuri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/balumuriraj/Workspace/issues"
+  },
+  "homepage": "https://github.com/balumuriraj/Workspace#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
