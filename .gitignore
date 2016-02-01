@@ -1,19 +1,12 @@
-.DS_Store
-*~
-*.exe
-!build/**/mtee.exe
-*.zip
-build/buildlog*
-build/**/*.log
-buildOutput*/
-release/
-.project
-.settings/
-.idea/
-.gitignore
-node_modules
-/lib
-/tests/support/lib
-/grunt.properties
-*.iml
-/
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!index.html
+!package.json
+!projects-config.json
+!styles.css.map
+!styles.scss
+!styles.css
+# etc...
