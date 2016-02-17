@@ -39,8 +39,20 @@
           var anchor = document.createElement("a");
           anchor.href = item.url;
           anchor.innerHTML = item.title;
+          anchor.target = "_blank";
 
           li.appendChild(anchor);
+
+          if(item.testUrl) {
+            var test = document.createElement("a");
+            test.className = "testBtn";
+            test.href = item.testUrl;
+            test.innerHTML = "test";
+            test.target = "_blank";
+
+            li.appendChild(test);
+          }
+
           dom.ul.appendChild(li);
         })
       });

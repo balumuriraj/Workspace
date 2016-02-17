@@ -28,14 +28,17 @@ header {
     #workspaceContainer .projects ul {
       list-style: none;
       padding: 0; }
-      #workspaceContainer .projects ul li a {
-        display: block;
-        padding: 1em;
-        cursor: pointer;
-        background: rgba(255, 255, 255, 0.05);
-        font-weight: 300;
-        color: #ffffff;
-        text-decoration: none; }
+      #workspaceContainer .projects ul li {
+        background: rgba(255, 255, 255, 0.05); }
+        #workspaceContainer .projects ul li a {
+          display: inline-block;
+          padding: 1em;
+          cursor: pointer;
+          font-weight: 300;
+          color: #ffffff; }
+        #workspaceContainer .projects ul li .testBtn {
+          float: right;
+          background: #e74c3c; }
       #workspaceContainer .projects ul li:hover {
         background: rgba(255, 255, 255, 0.1); }
       #workspaceContainer .projects ul li:nth-child(even) {
