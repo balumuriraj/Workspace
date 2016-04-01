@@ -4,8 +4,8 @@
     "list": [
       {
         "title": "arcgis-js-api-4",
-        "url": "http://coolstuff.dev/arcgis/arcgis-js-api-4/",
-        "testUrl": "http://coolstuff.dev/arcgis/arcgis-js-api-4/node_modules/intern/client.html?config=tests/intern&suites=tests/unit/all"
+        "url": "/arcgis/arcgis-js-api-4/",
+        "testUrl": "/arcgis/arcgis-js-api-4/node_modules/intern/client.html?config=tests/intern&suites=tests/unit/all"
       }
     ]
   },
@@ -14,7 +14,7 @@
     "list": [
       {
         "title": "arcgis-js-api",
-        "url": "http://coolstuff.dev/arcgis/arcgis-js-api/"
+        "url": "/arcgis/arcgis-js-api/"
       }
     ]
   }
